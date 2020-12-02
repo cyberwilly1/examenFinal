@@ -31,6 +31,14 @@ public class Lolita {
         }
         return casa;
     }
+    
+    static int Solucion3(int barrio){
+        double casa = Math.sqrt((Math.pow(barrio, 2) + barrio)/2);
+        if(casa % 1 != 0){
+            casa = -1;
+        }
+        return (int) casa;
+    }
 
     public static void main(String[] args) {
         Solucion1(8);
